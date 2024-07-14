@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login_flutter_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:login_flutter_app/src/utils/app_bindings.dart';
 import 'package:login_flutter_app/src/utils/theme/theme.dart';
 
@@ -15,10 +16,10 @@ class App extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+
       /// -- README(Docs[4]) -- To use Screen Transitions here
       /// -- README(Docs[5]) -- Home Screen or Progress Indicator
-      home: const Scaffold(body: Center(child: CircularProgressIndicator())),
+      home: const Scaffold(body: SplashScreen()),
     );
   }
 }
-
